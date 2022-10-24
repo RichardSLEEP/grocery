@@ -1,0 +1,1248 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&family=Open+Sans:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+* {
+  /* 无衬线字体是备选字体 */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 将一个元素的 width 设为 100px，那么这 100px 会包含它的 border 和 padding，即边框和内边距内容区的实际宽度是 width 减去 (border + padding) 的值 */
+  outline: none;
+  /* 轮廓不占据空间 */
+  border: none;
+  /* 控制文本 下划线、上划线   通过这个可以去掉链接的下划线*/
+  text-decoration: none;
+  /* 控制大小写  capitalize使首字母大写 */
+  text-transform: capitalize;
+  transition: 0.2s linear; //线性0.2s变换
+}
+
+@font-face {
+  font-family: "阿里巴巴普惠体 2.0 35 Thin";
+  font-weight: 250;
+  src: url("//at.alicdn.com/wf/webfont/7VzEF7IbiaFd/FPwtYYvwkbwiESdv4YiCm.woff2")
+      format("woff2"),
+    url("//at.alicdn.com/wf/webfont/7VzEF7IbiaFd/4PvCQA7eueaXuGxu7oLkI.woff")
+      format("woff");
+  font-display: swap;
+}
+
+/* 定义主色系，便于调用 */
+$green: #bac34e;
+$black: #222;
+$white: #fff;
+$light-color: #666;
+$light-bg: #f3f3f3;
+$border: 0.1rem solid rgba(0, 0, 0, 0.1);
+// 插页 (阴影向内) | x 偏移量 | y 偏移量 | 阴影颜色
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+//mixin 指令允许我们定义一个可以在整个样式表中重复使用的样式
+//相当于把样式打包组合 复用
+// 使用语法  @include grid;  打包中也可以用其他打包
+@mixin grid($val) {
+  display: grid; //流式布局
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5em;
+}
+
+html {
+  font-size: 62.5%;
+  /* 决定溢出内容截断、滚动条、直接显示 */
+  overflow-x: hidden;
+  /* auto 立即滚动 smooth使用预定义的时间函数实现平滑滚动 */
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3rem 9%;
+  /* padding: 15%; */
+}
+
+.heading {
+  // padding: 9rem 9%;
+  background: url(../image/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+
+  h1 {
+    color: $black;
+    font-size: 4rem;
+  }
+
+  p {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: $light-color;
+
+    a {
+      color: $black;
+      padding-right: 0.5rem;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+  border-bottom: $border;
+  color: $black;
+
+  span {
+    color: $green;
+    padding-left: 0.7rem;
+  }
+
+  a {
+    margin-left: auto;
+    color: $light-color;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block; // 保留上下外边距，内部形成一个方块，嵌入的方块，和周围的元素不换行，block则换行
+  padding: 0.8rem 3rem;
+  background: $green;
+  color: $white;
+  font-size: 1.7rem;
+  cursor: pointer;
+
+  &:hover {
+    background: $black;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index 较大的元素会覆盖较小的元素在上层进行显示 */
+  z-index: 1000;
+  background: $white;
+  /* .1 为透明度 */
+  box-shadow: $box-shadow;
+  /* 会被排列为一行 */
+  display: flex;
+  /* 项目在其包含块中在交叉轴方向上的对齐方式  此处为包含块的中间 */
+  align-items: center;
+  /* 均匀排列每个元素  首个元素放置于起点，末尾元素放置于终点  */
+  justify-content: space-between;
+  /* 控制4条边的内距 两个值时，第一个值会应用于上边和下边的内边距，第二个值应用于左边和右边 */
+  padding: 2rem 9%;
+
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bolder; // 加粗醒目
+    color: $black;
+
+    i {
+      color: $green;
+      padding-right: 0.5rem;
+    }
+  }
+
+  .navbar {
+    a {
+      font-size: 1.7rem;
+      color: $light-color; // 导航字体的颜色
+      margin: 0 1rem; //上下边距和左右边距  内部文字边距
+
+      &:hover {
+        // 用＆直接将父类选择器嵌套在里面
+        color: $green; // 移动到变绿色
+      }
+    }
+  }
+
+  .icons div {
+    font-size: 2.5rem;
+    margin-left: 1.7rem; // 只写左边距可以和中间空出一点距离
+    // margin: 2.5rem;
+    cursor: pointer; // 鼠标悬停改变光标
+    color: $light-color;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  .search-form {
+    position: absolute; //独立位置
+    top: -115%;
+    right: 2rem; // 距离右边墙壁的距离
+    // 现在是负的就隐藏起来，用active激活显现
+    width: 50rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    height: 5.5rem;
+    box-shadow: $box-shadow;
+    background: $white;
+
+    &.active {
+      top: 115%;
+    }
+
+    input {
+      height: 100%;
+      width: 100%;
+      padding: 0 1.2rem;
+      font-size: 1.6rem;
+      color: $black;
+      text-transform: none;
+    }
+
+    label {
+      font-size: 2.5rem;
+      margin-right: 1.7rem;
+      cursor: pointer;
+      color: $light-color;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  .shopping-cart {
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: $white;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow;
+    width: 35rem;
+    padding: 2rem; //内边距
+
+    &.active {
+      right: 2rem;
+      transition: 0.4s linear;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem; //和图片的距离
+      margin-bottom: 1.5rem; // 外边距 底边距
+      position: relative;
+
+      .fa-times {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        // transform 允许旋转、缩放、倾斜、平移
+        font-size: 2rem;
+        color: $light-color;
+        cursor: pointer;
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      img {
+        height: 10rem;
+      }
+
+      .content {
+        h3 {
+          font-size: 1.7rem;
+          padding-bottom: 0.5rem;
+          // margin-bottom: 0.5rem;
+          color: $black;
+        }
+
+        span {
+          font-size: 1.5rem;
+          // padding-bottom: 0.5rem;
+          color: $light-color;
+
+          &.multiply {
+            margin: 0 0.5rem; //和价格数量空出距离
+          }
+        }
+      }
+    }
+
+    .total {
+      color: $light-color;
+      text-align: center;
+      font-size: 2.2rem;
+
+      span {
+        // 嵌套样式不用点了
+        color: $black;
+      }
+    }
+
+    .btn {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+#menu-btn {
+  display: none;
+}
+// 通过在动画序列中定义关键帧（或 waypoints）的样式来控制 CSS 动画序列中的中间步骤。和 转换 transition 相比，关键帧 keyframes 可以控制动画序列的中间步骤
+@keyframes fadeLeft {
+  0% {
+    //0是开始 100是动画的结束状态  最后还是会切回设定的位置
+    transform: translateX(-5rem); //正是右移
+    opacity: 0; //完全透明
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    //动画的开始状态  最后还是会切回设定的位置
+    transform: scale(0.5); //正是右移
+    opacity: 0; //完全透明
+  }
+}
+
+.home {
+  padding-top: 14rem;
+  background: url(../image/home-bg.jpg) no-repeat;
+  /* 拉伸覆盖 */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .slides-container {
+    .slide {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      display: none;
+
+      &.active {
+        display: flex;
+      }
+
+      .content {
+        //图片和文字
+        flex: 1 1 40rem;
+        animation: fadeLeft 0.4s linear 0.4s backwards; //分别为持续时间 与 推迟时间  在延迟的时间中，保持0%状态，此处是保持透明 相当于晚点出现
+        span {
+          color: $light-color;
+          font-size: 2.5rem;
+        }
+
+        h3 {
+          font-size: 6rem;
+          color: $black;
+          padding: 0.5rem 0;
+        }
+      }
+
+      .image {
+        flex: 1 1 40rem;
+        margin: 3rem 0;
+        img {
+          width: 100%;
+          animation: fadeUp 0.4s linear;
+        }
+      }
+    }
+  }
+
+  #next-slide,
+  #prev-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem; //嘛意思
+    box-shadow: $box-shadow;
+    text-align: center;
+    background: $white;
+    font-size: 3rem;
+    color: $black;
+    cursor: pointer;
+
+    &:hover {
+      background: $green;
+      color: $white;
+    }
+  }
+
+  #prev-slide {
+    left: 2rem; //先确定样式，后相对移动定位 上方两个重叠了，这里让分开
+  }
+
+  #next-slide {
+    right: 2rem;
+  }
+}
+
+.banner-container {
+  @include grid(32rem);
+
+  .banner {
+    position: relative;
+    height: 25rem;
+    overflow: hidden;
+
+    &:hover img {
+      transform: scale(1.2);
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      transform: translateY(-50%);
+
+      span {
+        color: $light-color;
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        padding-top: 0.5rem;
+        color: $black;
+      }
+
+      .btn {
+        padding: 0.8rem 2.5rem;
+      }
+    }
+  }
+}
+
+.category .box-container {
+  @include grid(16rem);
+  padding: 4rem 0;
+
+  .box {
+    text-align: center;
+
+    img {
+      height: 15rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin: 1rem 0;
+      color: $light-color;
+    }
+
+    &:hover h3 {
+      color: $green;
+    }
+  }
+}
+
+.products .box-container {
+  @include grid(25rem);
+
+  .box {
+    position: relative;
+    background: $light-bg;
+    text-align: center;
+    overflow: hidden;
+
+    &:hover .icons {
+      top: 0;
+    }
+
+    .icons {
+      position: absolute;
+      top: -105%;
+      left: 0;
+      height: 30rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(243, 243, 243, 0.8);
+      gap: 1rem;
+
+      a {
+        font-size: 2rem;
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        background: $white;
+        box-shadow: $border;
+        color: $light-color;
+
+        &:hover {
+          background: $green;
+          color: $white;
+        }
+      }
+    }
+
+    .image {
+      height: 30rem;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 2rem;
+        color: $black;
+      }
+
+      .price {
+        font-size: 2rem;
+        color: $black;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+.products-details {
+  @include grid(25rem);
+  // padding-top: 14rem;
+  // background: $light-bg;
+  // background-size: cover;
+  // background-position: center;
+  // position: relative;
+
+  // margin: 0 10rem;
+  .box {
+    margin: 1rem 2rem 30rem 30rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem; //和图片的距离
+    margin-bottom: 1.5rem; // 外边距 底边距
+    position: relative;
+
+    .content {
+      position: relative;
+      display: inline-block;
+
+      h3 {
+        font-size: 3.5rem;
+        color: $light-color;
+      }
+
+      p {
+        padding-top: 1rem;
+        font-size: 3rem;
+        color: $black;
+      }
+    }
+  }
+}
+
+.product-wrap {
+  margin: 0 0.7rem 2rem 0.6rem;
+  position: relative;
+  height: 360px;
+  width: 260px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.2rem;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-box-shadow: 0.6rem 0.6rem 1rem #ddd;
+  box-shadow: 0.6rem 0.6rem 1rem #ddd;
+
+  &:hover {
+    -webkit-box-shadow: 0.6rem 0.6rem 1rem silver;
+    box-shadow: 0.6rem 0.6rem 1rem silver;
+  }
+
+  .product-img {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 0.2rem 0.2rem 0.8rem 0.8rem;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      border-radius: 0.2rem 0.2rem 0.8rem 0.8rem;
+    }
+  }
+
+  .product-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    p {
+      margin: 1rem 1rem 0 0;
+      padding: 0.4rem 0.6rem;
+      color: #fff;
+      font-size: 1.1rem;
+      background: -o-linear-gradient(45deg, orangered 20%, red, red);
+      background: linear-gradient(45deg, orangered 20%, red, red);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-box-shadow: 0.2rem 0.2rem 1rem #211e25;
+      box-shadow: 0.2rem 0.2rem 1rem #211e25;
+      border-radius: 0.2rem;
+      font-family: "Ubuntu", sans-serif;
+    }
+  }
+  .product-description {
+    margin-top: 0.4rem;
+    padding: 0.8rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .price {
+      margin-top: 0.6rem;
+      text-align: center;
+      color: #211e25;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.products-add {
+  @include grid(25rem);
+
+  margin: 10rem 30rem;
+
+  .box {
+    display: flex;
+    align-items: center;
+    gap: 6rem; //和图片的距离
+    margin-bottom: 1.5rem; // 外边距 底边距
+    position: relative;
+
+    label {
+      text-align: center;
+      line-height: 7rem;
+      font-size: 3rem;
+      color: $light-color;
+    }
+
+    .content {
+      display: flex;
+      position: relative;
+      display: inline-block;
+
+      p {
+        padding-top: 1rem;
+        font-size: 2rem;
+        color: $light-color;
+        display: inline-block;
+      }
+
+      input {
+        // height: 80px;
+        position: absolute;
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 2rem;
+        width: 100%;
+        border: $border;
+        // width: 20rem;
+      }
+
+      .file {
+        position: absolute;
+        top: 0;
+        opacity: 0; /*关键点*/
+        filter: alpha(opacity=0); /*兼容ie*/
+        // font-size: 100px; /* 增大不同浏览器的可点击区域 */
+        cursor: pointer;
+      }
+
+      textarea {
+        border: $border;
+        position: relative;
+        margin: 1rem;
+        font-size: 2rem;
+        padding: 1rem;
+        width: 100%;
+      }
+
+      select{
+        border: $border;
+        padding: 1rem;
+        font-size: 2rem;
+        color: $light-color;
+      }
+
+      // input::-webkit-input-placeholder {
+      //   /* placeholder颜色 */
+      //   color: $light-color;
+      //   /* placeholder字体大小 */
+      //   font-size: 2rem;
+      // }
+    }
+  }
+}
+
+// .span {
+//   font-size: 2.5rem;
+// }
+// h3 {
+//   font-size: 4rem;
+//   color: #bac34e;
+// }
+
+h2 {
+  font-size: 5rem;
+  color: #bac34e;
+}
+
+.footer {
+  background: $light-bg;
+
+  .box-container {
+    @include grid(25rem); //使用定义的混入
+
+    .box {
+      h3 {
+        font-size: 2.2rem;
+        color: $black;
+        padding: 1rem 0;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: $light-color;
+        padding-bottom: 0.5rem;
+      }
+      a {
+        font-size: 1.4rem;
+        color: $light-color;
+        padding: 1rem 3rem;
+        display: inline-block;
+        // padding: 1rem 0;
+        // display: block;
+
+        &:hover {
+          color: $green;
+
+          i {
+            padding-right: 2rem; //扩大间距，形成动画
+          }
+        }
+
+        i {
+          padding-right: 0.5rem;
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+.credit {
+  text-align: center;
+  background: $green;
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
+    /* padding: 15%; */
+  }
+
+  .home #next-slide,
+  .home #prev-slide {
+    transform: translateY(0);
+    top: 88%;
+  }
+
+  .home #prev-slide {
+    left: auto; //当position设置为absolute或fixed时，left属性指定了定位元素左外边距边界与其包含块左边界之间的偏移。对于绝对定位元素，元素将忽略此属性而以right属性为准
+    right: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header {
+    .search-form {
+      width: 100%;
+      right: 0;
+      border-radius: 0;
+
+      &.active {
+        top: 99%;
+        border-top: $border;
+        border-bottom: $border;
+      }
+    }
+
+    .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: $white;
+      border-top: $border;
+      border-bottom: $border;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      // 使用裁剪方式创建元素的可显示区域 polygon为多边形
+      // 每对参数表示多边形的顶点坐标（x，y）
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+
+      a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: $light-bg;
+        font-size: 2rem;
+        display: block;
+        // block  自己是盒子单独换行，适用手机多条横幅导航
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .slides-container .slide .content h3 {
+    font-size: 5rem;
+  }
+}
+
+// .content h3 {
+//   font-size: 2rem;
+// }
+
+// .box h3 {
+//   font-size: 2rem;
+// }
+
+// /* 没有并排？？ */
+// .box img {
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// .table {
+//   table-layout: fixed;
+//   width: 100px;
+//   border-collapse: collapse;
+// }

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 页眉 -->
+    <header class="header">
+        <a href="home.html" class="logo"> 网上农博会 </a>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="shop.html">shop</a>
+            <!-- <a href="">about</a> -->
+            <!-- <a href="">review</a>
+            <a href="">blog</a> -->
+            <!-- <a href="shopcart.html">shopCart</a> -->
+            <a href="JoinUs.html">Join Us</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <!-- <div id="login-btn" class="fas fa-user"></div> -->
+        </div>
+
+        <form action="" class="search-form">
+            <!-- 快捷输入 input:search#search-box -->
+            <input type="search" name="" placeholder="在此处搜索" id="searche-box">
+            <label for="search-box" class="fas fa-search"></label>
+            <!-- label的for值和input的id值相同    相当于input附带的文字说明
+                当用户聚焦到这个表单输入元素时，屏幕阅读器可以读出标签，
+                让使用辅助技术的用户更容易理解应输入什么数据
+                可以点击关联的标签来聚焦或者激活这个输入元素
+            -->
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-1.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">￥5.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-2.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">￥5.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-3.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">￥5.99</span>
+                </div>
+            </div>
+            <h3 class="total"> total : <span>16.96</span> </h3>
+            <!-- <h3 class="total"> total : 16.96</h3> -->
+            <a href="#" class="btn">结账</a>
+        </div>
+        <!-- 
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="email" placeholder="请输入邮箱" class="box">
+            <input type="password" placeholder="请输入密码" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">记住我</label>
+            </div>
+            <input type="submit" value="登录" class="btn">
+        </form> -->
+    </header>
+    <!-- 页眉结束 -->
+
+    <div class="heading">
+        <h1>Join Us</h1>
+        <p> <a href="home.html">home >></a> Join Us </p>
+    </div>
+
+    <section class="products-add">
+        <div class="box">
+            <div class="content">
+                <div class="product-img">
+                    <label>宣传图片 :</label>
+                    <!-- <a href="#" class="btn">在此处上传图片</a> -->
+                    <a href="" class="btn"><input class="file" type="file">选择图片</a>
+
+                </div>
+                <div class="name">
+                    <label>产品名称 :</label>
+                    <input type="text" placeholder="在此处输入名称">
+                </div>
+                <div class="description">
+                    <label>介绍 :</label>
+                    <!-- <input type="textarea" placeholder="在此处输入产品介绍"> -->
+                    <textarea name="" id="" cols="30" rows="10" placeholder="在此处输入产品介绍"></textarea>
+                </div>
+                <div class="price">
+                    <label>价格 :</label>
+                    <input type="text" placeholder="请输入您的定价">
+                </div>
+                <div class="size">
+                    <label>尺寸 :</label>
+                    <input type="text" placeholder="请输入产品的供应尺寸">
+                </div>
+                <div class="location">
+                    <label>产地 :</label>
+                    <!-- <input type="text" placeholder="请输入产品的供应尺寸"> -->
+
+                    <select>
+                        <!-- selected="selected" 打开页面处于选中状态 -->
+                        <option value="河南">
+                            河南
+                        </option>
+                        <option value="山东">
+                            山东
+                        </option>
+                        <option value="广东">
+                            广东
+                        </option>
+                        <option value="北京">
+                            北京
+                        </option>
+                        <option value="成都">
+                            成都
+                        </option>
+                        <option value="重庆">
+                            重庆
+                        </option>
+                        <option value="青海">
+                            青海
+                        </option>
+                        <option value="湖南">
+                            湖南
+                        </option>
+                        <option value="陕西">
+                            陕西
+                        </option>
+                        <option value="浙江">
+                            浙江
+                        </option>
+                        <option value="安徽">
+                            安徽
+                        </option>
+                        <option value="河北">
+                            河北
+                        </option>
+                        <option value="山西">
+                            山西
+                        </option>
+                        <option value="辽宁">
+                            辽宁
+                        </option>
+                        <option value="吉林">
+                            吉林
+                        </option>
+                        <option value="黑龙江">
+                            黑龙江
+                        </option>
+                        <option value="江苏">
+                            江苏
+                        </option>
+                        <option value="海南">
+                            海南
+                        </option>
+                        <option value="台湾">
+                            台湾
+                        </option>
+                        <option value="湖北">
+                            湖北
+                        </option>
+                        <option value="四川">
+                            四川
+                        </option>
+                        <option value="贵州">
+                            贵州
+                        </option>
+                        <option value="云南">
+                            云南
+                        </option>
+                        <option value="甘肃">
+                            甘肃
+                        </option>
+                        <option value="江西">
+                            江西
+                        </option>
+                        <option value="福建">
+                            福建
+                        </option>
+                        <option value="北京">
+                            北京
+                        </option>
+                        <option value="上海">
+                            上海
+                        </option>
+                        <option value="天津">
+                            天津
+                        </option>
+                        <option value="香港">
+                            香港
+                        </option>
+                        <option value="澳门">
+                            澳门
+                        </option>
+                        <option value="广西">
+                            广西
+                        </option>
+                        <option value="西藏">
+                            西藏
+                        </option>
+                        <option value="新疆">
+                            新疆
+                        </option>
+                        <option value="内蒙古">
+                            内蒙古
+                        </option>
+                        <option value="宁夏">
+                            宁夏
+                        </option>
+                    </select>
+                </div>
+                <div class="time">
+                    <label>上市时间 :</label>
+                    <input type="date" >
+                </div>
+                <div class="minimum">
+                    <label for="">最小零售单元 :</label>
+                    <input type="text" placeholder="请规定产品的最小零售单元">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="banner-container">
+    </section>
+
+    <!-- footer sectiton starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>快速导航</h3>
+                <a href="home.html"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="shop.html"><i class="fas fa-arrow-right"></i> shop</a>
+                <a href="JoinUs.html"><i class="fas fa-arrow-right"></i>JoinUs</a>
+                <!-- <a href="">review</a>
+                <a href="">blog</a> -->
+                <!-- <a href="shopcart.html"><i class="fas fa-arrow-right"></i>shopCart</a>
+                <a href=""><i class="fas fa-arrow-right"></i>contact</a> -->
+            </div>
+        </div>
+
+        <!-- <div class="box">
+            <h3></h3>
+        </div> -->
+
+        <!-- 页眉的其他部分暂时舍弃 33：16 -->
+
+    </section>
+
+    <section class="credit">商务合作：17385023452 | 2022</section>
+
+    <!-- footer section ends -->
+
+
+    <link rel="stylesheet" href="">
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

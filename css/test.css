@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&family=Open+Sans:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  /* 无衬线字体是备选字体 */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 将一个元素的 width 设为 100px，那么这 100px 会包含它的 border 和 padding，即边框和内边距内容区的实际宽度是 width 减去 (border + padding) 的值 */
+  /* outline: none; */
+  /* 轮廓不占据空间 */
+  border: none;
+  /* 控制文本 下划线、上划线   通过这个可以去掉链接的下划线*/
+  text-decoration: none;
+  /* 控制大小写  capitalize使首字母大写 */
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+/* 定义主色系，便于调用 */
+/* $green: #bac34e;
+$black: #222;
+$white:#fff;
+$light-color:#666;
+$light-bg:#f3f3f3;
+$border:.1rem solid rgba(0,0,0,.1);
+插页 (阴影向内) | x 偏移量 | y 偏移量 | 阴影颜色
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.1); */
+
+html {
+  font-size: 120%;
+  /* 决定溢出内容截断、滚动条、直接显示 */
+  overflow-x: hidden;
+  /* auto 立即滚动 smooth使用预定义的时间函数实现平滑滚动 */
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3rem 9%;
+  /* padding: 15%; */
+}
+
+.heading{
+  padding: 9rem 9%;
+  background: url(../image/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+/* .a{
+  margin-left: auto;
+  font-size: 1.5rem;
+} */
+
+.btn {
+  background: #bac34e;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index 较大的元素会覆盖较小的元素在上层进行显示 */
+  z-index: 1000;
+  background: white;
+  /* .1 为透明度 */
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); */
+  /* 会被排列为一行 */
+  display: flex;
+  /* 项目在其包含块中在交叉轴方向上的对齐方式  此处为包含块的中间 */
+  align-items: center;
+  /* 均匀排列每个元素  首个元素放置于起点，末尾元素放置于终点  */
+  justify-content: space-between;
+  /* 控制4条边的内距 两个值时，第一个值会应用于上边和下边的内边距，第二个值应用于左边和右边 */
+  padding: 2rem 9%;
+}
+
+.home{
+  padding-top: 14rem;
+  background: url(../image/home-bg.jpg) ;
+  /* 拉伸覆盖 */
+  background-size: cover; 
+  background-position: center;
+  position: relative;
+}
+
+/* .slide-container image{
+  flex: 1 1 40rem;
+} */
+.span{
+    font-size: 2.5rem;
+}
+h3{
+  font-size: 4rem;
+  color: #bac34e;
+}
+
+.content h3{
+  font-size: 2rem;
+}
+
+.box h3{
+  font-size: 2rem;
+}
+
+
+/* 没有并排？？ */
+.box img{
+  position: relative;
+  overflow: hidden;
+}
+
+.shopping-cart{
+  margin: 80px 25%;
+  position: relative;
+}
+
+.table{
+  table-layout: fixed;
+  width: 100px;
+  border-collapse: collapse;
+}

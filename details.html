@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- 页眉 -->
+    <header class="header">
+        <a href="home.html" class="logo"> 网上农博会 </a>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="shop.html">shop</a>
+            <!-- <a href="">about</a> -->
+            <!-- <a href="">review</a>
+            <a href="">blog</a> -->
+            <!-- <a href="shopcart.html">shopCart</a> -->
+            <a href="JoinUs.html">Join Us</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <!-- <div id="login-btn" class="fas fa-user"></div> -->
+        </div>
+
+        <form action="" class="search-form">
+            <!-- 快捷输入 input:search#search-box -->
+            <input type="search" name="" placeholder="在此处搜索" id="searche-box">
+            <label for="search-box" class="fas fa-search"></label>
+            <!-- label的for值和input的id值相同    相当于input附带的文字说明
+                当用户聚焦到这个表单输入元素时，屏幕阅读器可以读出标签，
+                让使用辅助技术的用户更容易理解应输入什么数据
+                可以点击关联的标签来聚焦或者激活这个输入元素
+            -->
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-1.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">￥5.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-2.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">￥5.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-3.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">￥5.99</span>
+                </div>
+            </div>
+            <h3 class="total"> total : <span>16.96</span> </h3>
+            <!-- <h3 class="total"> total : 16.96</h3> -->
+            <a href="#" class="btn">结账</a>
+        </div>
+        <!-- 
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="email" placeholder="请输入邮箱" class="box">
+            <input type="password" placeholder="请输入密码" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">记住我</label>
+            </div>
+            <input type="submit" value="登录" class="btn">
+        </form> -->
+    </header>
+    <!-- 页眉结束 -->
+
+    <div class="heading">
+        <h1>shop</h1>
+        <p> <a href="home.html">home >></a> <a href="shop.html">shop >></a> details </p>
+    </div>
+
+    <!-- 可以采用浮动 实现文字环绕 -->
+    <section class="products-details">
+        <div class="box">
+            <div class="image">
+                <img id="orange" src="image/home-1.png " alt=" " class="img-responsive">
+            </div>
+            <div class="content">
+                <h2>涌泉蜜桔</h2>
+                <div class="description">
+                    <h3>介绍 :</h3>
+                    <p>单果重120-140克，无核，果形整齐，色泽亮丽，果皮细薄，肉质脆嫩，汁多化渣，风味浓郁，品质极佳。 </p>
+                </div>
+                <div class="price">
+                    <h3>价格 :</h3>
+                    <p>￥6.99/kg </p>
+                </div>
+                <div class="size">
+                    <h3>尺寸 :</h3>
+                    <p>大果（单果重120-140克） </p>
+                </div>
+                <div class="location">
+                    <h3>产地 :</h3>
+                    <p>浙江台州 </p>
+                </div>
+                <div class="time">
+                    <h3>上市时间 :</h3>
+                    <p>2022-09-19 </p>
+                </div>
+                <div class="minimum">
+                    <h3>最小零售单元 :</h3>
+                    <p>500g/箱 </p>
+                </div>
+                <input type="submit" name="submit" value="添加至购物车" class="btn">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer sectiton starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>快速导航</h3>
+                <a href="home.html"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="shop.html"><i class="fas fa-arrow-right"></i> shop</a>
+                <a href="JoinUs.html"><i class="fas fa-arrow-right"></i>JoinUs</a>
+                <!-- <a href="">review</a>
+                <a href="">blog</a> -->
+                <!-- <a href="shopcart.html"><i class="fas fa-arrow-right"></i>shopCart</a>
+                <a href=""><i class="fas fa-arrow-right"></i>contact</a> -->
+            </div>
+        </div>
+
+        <!-- <div class="box">
+            <h3></h3>
+        </div> -->
+
+        <!-- 页眉的其他部分暂时舍弃 33：16 -->
+
+    </section>
+
+    <section class="credit">商务合作：17385023452 | 2022</section>
+
+    <!-- footer section ends -->
+
+
+    <link rel="stylesheet" href="">
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
