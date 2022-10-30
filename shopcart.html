@@ -102,65 +102,56 @@
         <p> <a href="home.html">home >></a> shopCart </p>
     </div>
 
-    <div class="shopping-cart">
-        <!-- <div class="box">
-            <i class="fas fa-times"></i>
-            <img src="image/cart-1.jpg" alt="">
-            <div class="content">
-                <h3>organic food</h3>
-                <span class="quantity">1</span>
-                <span class="multiply">x</span>
-                <span class="price">$18.99</span>
+    <!-- 购物车、收藏商品开始 -->
+    <div class="shopping-cart-area" id="product-cart-area">
+        <div class="shopping-cart-wrap">
+            <div class="product-cart-menu">
+                <div class="cart-menu-items">
+                    <h2 id="selected-products" class="active-cart-menu">Selected Products</h2>
+                    <h2 id="favorite-products">Favorite Products</h2>
+                </div>
+
+                <div class="cart-close-btn">
+                    <button>Close Cart</button>
+                </div>
             </div>
-        </div> -->
 
-        <table>
-            <tr>
-                <th>商品</th>
-                <th>数量</th>
-                <th>总价</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="image/product-1.jpg">
+            <div class="cart-contents-header">
+                <div class="total-cart-items">
+                    <p id="total-selected" class="active-product-counter">
+                        <strong>Total Selected: </strong>
+                        <span>No item found</span>
+                    </p>
+                    <p id="total-favorite">
+                        <strong>Total Favorite: </strong>
+                        <span>No item found</span>
+                    </p>
+                </div>
+
+                <div class="buying-product-title">
+                    <div class="total-buying-item">
+                        <p>
+                            <strong>Total Buying Items: </strong>
+                            <span id="total-buying-item-counter">0</span>
+                        </p>
                     </div>
-                </td>
-                <td><input type="number" value="10"></td>
-                <td>￥2.99</td>
-            </tr>
-        </table>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <h2>收件信息</h2>
-        <form action="" method="post">
-            <p><label for="">收件人姓名：<input type="text"></label></p>
-            <p><label for="">收件人电话：<input type="password"></label></p>
-            <p>
-                <label for="">所在地区:</label>
-                <select name="" id="">
-                    <option value="">杭州市</option>
-                    <option value="">宁波市</option>
-                    <option value="">绍兴市</option>
-                    <option value="">舟山市</option>
-                    <option value="">嘉兴市</option>
-                    <option value="">台州市</option>
-                    <option value="">衢州市</option>
-                    <option value="">温州市</option>
-                    <option value="">丽水市</option>
-                    <option value="">金华市</option>
-                </select>
-            </p>
-            <p>
-            <form action="">
-                收货方式
-                自提 <input type="radio" name="shouhuo" id="">
-                邮寄 <input type="radio" name="shouhuo" id="">
-            </form>
-            </p>
-        </form>
+                    <div class="buy-items-button">
+                        <button id="buy-items">Buy Items</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-contents-area shopping-cart-contents-area active-cart-content">
+                <!-- selected product contents -->
+            </div>
+            <div class="cart-wishlist-area shopping-cart-contents-area">
+                <!-- favorite product contents -->
+            </div>
+
+        </div>
+
     </div>
-
-
+    <!-- 购物车、收藏结束 -->
 
     <section class="banner-container">
     </section>
