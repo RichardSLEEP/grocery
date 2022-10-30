@@ -1433,6 +1433,211 @@ h2 {
 
 // 购物车收藏结束
 
+/* =================================
+    Featured Product Section Start
+=================================== */
+
+.featured-product-section {
+  padding-bottom: 2rem;
+
+  .featured-product-wrap {
+    padding-top: 3.6rem;
+
+    .featured-products {
+      padding-top: 1rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: start;
+
+      .product-wrap {
+        margin: 0 0.7rem 2rem 0.6rem;
+        position: relative;
+        height: 360px;
+        width: 260px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0.2rem;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        -webkit-box-shadow: 0.6rem 0.6rem 1rem #ddd;
+        box-shadow: 0.6rem 0.6rem 1rem #ddd;
+
+        &:hover{
+          -webkit-box-shadow: 0.6rem 0.6rem 1rem silver;
+          box-shadow: 0.6rem 0.6rem 1rem silver;
+        }
+
+        .product-img {
+          position: relative;
+          width: 100%;
+          height: 55%;
+          border: 2px solid #fff;
+          border-radius: 0.2rem 0.2rem 0.6rem 0.6rem;
+
+          &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 0.2rem 0.2rem 0.8rem 0.8rem;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            border-radius: 0.2rem 0.2rem 0.8rem 0.8rem;
+          }
+        }
+
+        .product-icons {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+
+          .add-to-favorite {
+            margin: 1rem 0 0 1rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            text-decoration: none;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+            span {
+              color: #fff;
+              cursor: pointer;
+              font-size: 1.2rem;
+              padding: 0.4rem 0.4rem;
+              border-radius: 0.2rem;
+              background: #61790a;
+              -webkit-box-shadow: 0.2rem 0.2rem 1rem #211e25;
+              box-shadow: 0.2rem 0.2rem 1rem #211e25;
+              -webkit-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+
+              &:active{
+                -webkit-transform: scale(0.94);
+                -ms-transform: scale(0.94);
+                transform: scale(0.94);
+              }
+            }
+          }
+          
+          p {
+            margin: 1rem 1rem 0 0;
+            padding: 0.4rem 0.6rem;
+            color: #fff;
+            font-size: 1.1rem;
+            background: -o-linear-gradient(45deg, orangered 20%, red, red);
+            background: linear-gradient(45deg, orangered 20%, red, red);
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-box-shadow: 0.2rem 0.2rem 1rem #211e25;
+            box-shadow: 0.2rem 0.2rem 1rem #211e25;
+            border-radius: 0.2rem;
+            font-family: "Ubuntu", sans-serif;
+          }
+
+        }
+
+        .product-description {
+          margin-top: 0.4rem;
+          padding: 0.8rem;
+          width: 100%;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+          .product-name {
+            color: #211e25;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: center;
+          }
+
+          > .price {
+            font-size: 1.1rem;
+          }
+
+          .price {
+            margin-top: 0.6rem;
+            text-align: center;
+            color: #211e25;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: none;
+
+            .f-product-unit {
+              display: none;
+            }
+          }
+
+          .add-to-cart-btn {
+            margin-top: 1.4rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            cursor: pointer;
+
+            p {
+              color: #fff;
+              font-size: 1rem;
+              font-family: "Ubuntu", sans-serif;
+              text-align: center;
+              text-decoration: none;
+              padding: 0.6rem 0.8rem;
+              border-radius: 0.2rem;
+              background: #459122;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+// 好像没有对应标签？？
+#pricing.menu-active {
+  padding-top: 3.4rem;
+}
+
+/* ================================
+  Featured Product Section End
+================================== */
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;

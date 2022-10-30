@@ -410,6 +410,54 @@ h2 { font-size: 5rem; color: #bac34e; }
 
 .shopping-cart-area input[type="number"] { -moz-appearance: textfield; }
 
+/* =================================
+    Featured Product Section Start
+=================================== */
+.featured-product-section { padding-bottom: 2rem; }
+
+.featured-product-section .featured-product-wrap { padding-top: 3.6rem; }
+
+.featured-product-section .featured-product-wrap .featured-products { padding-top: 1rem; display: flex; flex-wrap: wrap; width: 100%; height: auto; justify-content: start; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap { margin: 0 0.7rem 2rem 0.6rem; position: relative; height: 360px; width: 260px; background: #fff; border: 1px solid #ddd; border-radius: 0.2rem; transition: all 0.4s ease; box-shadow: 0.6rem 0.6rem 1rem #ddd; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap:hover { box-shadow: 0.6rem 0.6rem 1rem silver; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-img { position: relative; width: 100%; height: 55%; border: 2px solid #fff; border-radius: 0.2rem 0.2rem 0.6rem 0.6rem; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-img::before { position: absolute; content: ""; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0, 0, 0, 0.4); border-radius: 0.2rem 0.2rem 0.8rem 0.8rem; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-img img { height: 100%; width: 100%; object-fit: cover; border-radius: 0.2rem 0.2rem 0.8rem 0.8rem; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-icons { position: absolute; top: 0; left: 0; display: flex; width: 100%; justify-content: space-between; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-icons .add-to-favorite { margin: 1rem 0 0 1rem; display: flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-icons .add-to-favorite span { color: #fff; cursor: pointer; font-size: 1.2rem; padding: 0.4rem 0.4rem; border-radius: 0.2rem; background: #61790a; box-shadow: 0.2rem 0.2rem 1rem #211e25; transition: all 0.3s ease-in-out; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-icons .add-to-favorite span:active { transform: scale(0.94); }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-icons p { margin: 1rem 1rem 0 0; padding: 0.4rem 0.6rem; color: #fff; font-size: 1.1rem; background: linear-gradient(45deg, orangered 20%, red, red); box-sizing: border-box; box-shadow: 0.2rem 0.2rem 1rem #211e25; border-radius: 0.2rem; font-family: "Ubuntu", sans-serif; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-description { margin-top: 0.4rem; padding: 0.8rem; width: 100%; box-sizing: border-box; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-description .product-name { color: #211e25; font-size: 1.4rem; font-weight: bold; text-align: center; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-description > .price { font-size: 1.1rem; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-description .price { margin-top: 0.6rem; text-align: center; color: #211e25; font-size: 1.2rem; font-weight: 600; display: none; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-description .price .f-product-unit { display: none; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-description .add-to-cart-btn { margin-top: 1.4rem; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+
+.featured-product-section .featured-product-wrap .featured-products .product-wrap .product-description .add-to-cart-btn p { color: #fff; font-size: 1rem; font-family: "Ubuntu", sans-serif; text-align: center; text-decoration: none; padding: 0.6rem 0.8rem; border-radius: 0.2rem; background: #459122; }
+
+#pricing.menu-active { padding-top: 3.4rem; }
+
+/* ================================
+  Featured Product Section End
+================================== */
 @media (max-width: 991px) { html { font-size: 55%; }
   .header { padding: 2rem; }
   section { padding: 3rem 2rem; /* padding: 15%; */ }
