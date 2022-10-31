@@ -334,11 +334,7 @@ h2 { font-size: 5rem; color: #bac34e; }
 
 .credit { text-align: center; background: #bac34e; color: white; font-size: 2rem; }
 
-.shopping-cart-area { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: #fff; overflow: auto; z-index: 9999; }
-
-.shopping-cart-area #product-cart-area { opacity: 0; visibility: hidden; pointer-events: none; transform: scale(0.6); transition: all 0.3s ease; }
-
-.shopping-cart-area #product-cart-area .active-cart { opacity: 1; visibility: visible; pointer-events: auto; transform: scale(1); }
+.shopping-cart-area { width: 100%; overflow: auto; pointer-events: none; transform: scale(0.6); transition: all 0.3s ease; opacity: 1; visibility: visible; pointer-events: auto; transform: scale(1); }
 
 .shopping-cart-area .shopping-cart-wrap { padding: 3rem; width: 100%; height: auto; box-sizing: border-box; }
 

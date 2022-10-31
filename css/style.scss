@@ -1146,35 +1146,37 @@ h2 {
 
 // 购物车收藏开始
 .shopping-cart-area {
-  position: fixed;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   width: 100%;
-  height: 100vh;
-  background: #fff;
+  // height: 100vh;
+  // background: #fff;
   overflow: auto;
-  z-index: 9999;
+  // z-index: 9999;
 
-  #product-cart-area {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    -webkit-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    transform: scale(0.6);
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  pointer-events: none;
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 
-    .active-cart {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-    }
-  }
+  // .active-cart {
+  // opacity: 1;
+  // visibility: visible;
+  // pointer-events: auto;
+  // -webkit-transform: scale(1);
+  // -ms-transform: scale(1);
+  // transform: scale(1);
+  // }
 
   .shopping-cart-wrap {
     padding: 3rem;
@@ -1470,7 +1472,7 @@ h2 {
         -webkit-box-shadow: 0.6rem 0.6rem 1rem #ddd;
         box-shadow: 0.6rem 0.6rem 1rem #ddd;
 
-        &:hover{
+        &:hover {
           -webkit-box-shadow: 0.6rem 0.6rem 1rem silver;
           box-shadow: 0.6rem 0.6rem 1rem silver;
         }
@@ -1482,7 +1484,7 @@ h2 {
           border: 2px solid #fff;
           border-radius: 0.2rem 0.2rem 0.6rem 0.6rem;
 
-          &::before{
+          &::before {
             position: absolute;
             content: "";
             top: 0;
@@ -1542,14 +1544,14 @@ h2 {
               -o-transition: all 0.3s ease-in-out;
               transition: all 0.3s ease-in-out;
 
-              &:active{
+              &:active {
                 -webkit-transform: scale(0.94);
                 -ms-transform: scale(0.94);
                 transform: scale(0.94);
               }
             }
           }
-          
+
           p {
             margin: 1rem 1rem 0 0;
             padding: 0.4rem 0.6rem;
@@ -1564,7 +1566,6 @@ h2 {
             border-radius: 0.2rem;
             font-family: "Ubuntu", sans-serif;
           }
-
         }
 
         .product-description {
@@ -1623,7 +1624,6 @@ h2 {
             }
           }
         }
-        
       }
     }
   }
