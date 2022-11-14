@@ -122,7 +122,7 @@
                 </div>
                 <div class="price">
                     <label>价格 :</label>
-                    <input type="text" placeholder="请输入您的定价">
+                    <input type="number" placeholder="请输入您的定价">
                 </div>
                 <div class="size">
                     <label>尺寸 :</label>
@@ -244,16 +244,16 @@
                         </option>
                     </select>
                 </div>
-                <div class="time">
+                <div class="time">---
                     <label>上市时间 :</label>
-                    <input type="date" >
+                    <input type="date">
                 </div>
-                <div class="minimum">
+                <div class="unit">
                     <label for="">最小零售单元 :</label>
                     <input type="text" placeholder="请规定产品的最小零售单元">
                 </div>
 
-            </div>
+        </div>
         </div>
     </section>
 
@@ -296,3 +296,22 @@
 </body>
 
 </html>
+
+<!-- 导入jQuery库 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> 
+    先写出静态  再挪到动态 JavaScript字符串字符串插值 变量${}  ``
+    del.click({}) 函数的值赋给它  所以{}在括号里面
+    变成jQuery对象 $(this).parent() 才可以用父元素
+    jquery 菜鸟教程 查找删除元素 的方法 
+    on 方法  按钮初期还没有加载 没有响应
+-->
+<script>
+    var xx = xx
+    vsr submit = document.querySelector("#xx")
+    submit.onclice = () => {
+        if (sayWhat.value) {
+            var item = $("$xx").append('<div class="">' + sayWhat.value + '</div>')
+        } else {
+            window.alert("请输入值！")
+        }
+    }
+</script>

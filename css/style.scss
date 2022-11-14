@@ -445,7 +445,7 @@ section {
 .title {
   display: flex;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 3rem;
   padding: 1.2rem 0;
   border-bottom: $border;
@@ -501,7 +501,7 @@ section {
   padding: 2rem 9%;
 
   .logo {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bolder; // 加粗醒目
     color: $black;
 
@@ -525,7 +525,7 @@ section {
   }
 
   .icons div {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-left: 1.7rem; // 只写左边距可以和中间空出一点距离
     // margin: 2.5rem;
     cursor: pointer; // 鼠标悬停改变光标
@@ -563,7 +563,7 @@ section {
     }
 
     label {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       margin-right: 1.7rem;
       cursor: pointer;
       color: $light-color;
@@ -699,7 +699,7 @@ section {
         animation: fadeLeft 0.4s linear 0.4s backwards; //分别为持续时间 与 推迟时间  在延迟的时间中，保持0%状态，此处是保持透明 相当于晚点出现
         span {
           color: $light-color;
-          font-size: 2.5rem;
+          font-size: 1.5rem;
         }
 
         h3 {
@@ -786,7 +786,7 @@ section {
       }
 
       .btn {
-        padding: 0.8rem 2.5rem;
+        padding: 0.8rem 1.5rem;
       }
     }
   }
@@ -895,19 +895,20 @@ section {
 
   // margin: 0 10rem;
   .box {
-    margin: 1rem 2rem 30rem 30rem;
+    margin: 1rem 2rem 30rem 2rem;
     display: flex;
     align-items: center;
-    gap: 6rem; //和图片的距离
+    gap: 1rem; //和图片的距离
     margin-bottom: 1.5rem; // 外边距 底边距
     position: relative;
+
 
     .content {
       position: relative;
       display: inline-block;
 
       h3 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         color: $light-color;
       }
 
@@ -1710,6 +1711,16 @@ h2 {
     }
   }
 }
+
+// 管理界面
+.col-3 {
+  // width: 50px;
+  display: flex;
+  // align-items: center;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 
 @media (max-width: 450px) {
   html {

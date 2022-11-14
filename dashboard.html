@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Navbar</title>
+  <title>Join Us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,7 +19,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <!-- 字体 -->
+  <!-- 图标 -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -361,7 +361,7 @@
                   <div class="form-group">
                     <label for="exampleInputEmail1">用户名</label>
                     <input type="text" class="form-control" id="userNameChangeInput" placeholder="请输入用户名>
-                    <input class="float-right" type="text" id="txtId" name="txtPrice"
+                    <input class=" float-right" type="text" id="txtId" name="txtPrice"
                       style="border:0; border-radius: 10px;height: 40px;background:#f8fafd;width:100%;outline: none;display: none;">
                   </div>
                 </div>
@@ -446,96 +446,232 @@
                       style="border:0; border-radius: 10px;height: 40px;background:#f8fafd;width:100%;outline: none;display: none;">
                   </div>
                 </div>
-                <div class="col-3" style="height: 100px;">
+                <div class="col-3">
                   <div class="form-group">
                     <label for="exampleInputEmail1">农产品介绍</label>
                     <input type="email" class="form-control" id="foodAddNoteInput" placeholder="介绍一下该农产品吧">
                   </div>
                 </div>
-                <div class="col-3" style="height: 100px;">
+                <div class="col-3">
                   <div class="form-group">
                     <label for="exampleInputEmail1">价格</label>
                     <input type="number" class="form-control" id="foodAddPriceInput" placeholder="请输入农产品定价">
                   </div>
                 </div>
-                <div class="col-3 p-0 pt-3 pl-3" style="height: 100px;">
-                  <div class="btn btn-rounded waves-effect btn-sm"
-                    style="border-radius: 10px;width: 90%;background: #ff6f47">
-                    <span class="text-white">农产品宣传图</span>
-                    <input class="text-white" type="file" type="file" name="file" id="foodAddImageInput">
+                <div class="col-3">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">产地</label>
+                    <input type="select" class="form-control" id="foodAddLocationInput">
+                      <select>
+                        <!-- selected="selected" 打开页面处于选中状态 -->
+                        <option value="河南">
+                          河南
+                        </option>
+                        <option value="山东">
+                          山东
+                        </option>
+                        <option value="广东">
+                          广东
+                        </option>
+                        <option value="北京">
+                          北京
+                        </option>
+                        <option value="成都">
+                          成都
+                        </option>
+                        <option value="重庆">
+                          重庆
+                        </option>
+                        <option value="青海">
+                          青海
+                        </option>
+                        <option value="湖南">
+                          湖南
+                        </option>
+                        <option value="陕西">
+                          陕西
+                        </option>
+                        <option value="浙江">
+                          浙江
+                        </option>
+                        <option value="安徽">
+                          安徽
+                        </option>
+                        <option value="河北">
+                          河北
+                        </option>
+                        <option value="山西">
+                          山西
+                        </option>
+                        <option value="辽宁">
+                          辽宁
+                        </option>
+                        <option value="吉林">
+                          吉林
+                        </option>
+                        <option value="黑龙江">
+                          黑龙江
+                        </option>
+                        <option value="江苏">
+                          江苏
+                        </option>
+                        <option value="海南">
+                          海南
+                        </option>
+                        <option value="台湾">
+                          台湾
+                        </option>
+                        <option value="湖北">
+                          湖北
+                        </option>
+                        <option value="四川">
+                          四川
+                        </option>
+                        <option value="贵州">
+                          贵州
+                        </option>
+                        <option value="云南">
+                          云南
+                        </option>
+                        <option value="甘肃">
+                          甘肃
+                        </option>
+                        <option value="江西">
+                          江西
+                        </option>
+                        <option value="福建">
+                          福建
+                        </option>
+                        <option value="北京">
+                          北京
+                        </option>
+                        <option value="上海">
+                          上海
+                        </option>
+                        <option value="天津">
+                          天津
+                        </option>
+                        <option value="香港">
+                          香港
+                        </option>
+                        <option value="澳门">
+                          澳门
+                        </option>
+                        <option value="广西">
+                          广西
+                        </option>
+                        <option value="西藏">
+                          西藏
+                        </option>
+                        <option value="新疆">
+                          新疆
+                        </option>
+                        <option value="内蒙古">
+                          内蒙古
+                        </option>
+                        <option value="宁夏">
+                          宁夏
+                        </option>
+                      </select>
+                    </input>
                   </div>
                 </div>
-                <div class="col-8 p-0  pl-3 pb-4">
-                  <button id="addfood2" onclick="AddFood()" class="btn btn-primary float-left"
-                    style="background: #ff6f47;border: 1px solid #ff6f47;">添加</button>
-                  <button id="updatefood2" onclick="SaveUpdateFood()" class="btn btn-warning text-white float-left"
-                    style="display: none;">保存更新</button>
-                  <button onclick="CloseFood()" class="btn btn-danger text-white ml-1">取消</button>
+                <div class="col-3">
+                  <div class="form-group">
+                    <label>上市时间 :</label>
+                    <input type="date">
+                  </div>
+                  <div class="col-3">
+                    <div>
+                      <label>宣传图片 :</label>
+                      <a class="btn" style="margin-top: 1rem; display: inline-block; 
+                      padding: 0.8rem 3rem;
+                      background: #bac34e;
+                      color: #fff;
+                      font-size: 1.7rem;
+                      cursor: pointer; 
+                      width: 100px;
+                      height: 50px;
+                      font-size: 1rem;
+                      "><input type="file" style="opacity: 0;">选择图片</input></a>
+                      <!-- <input class="text-white"  type="file" name="file" id="foodAddImageInput"> -->
+                    </div>
+                  </div>
+                  <div class="col-8 p-0  pl-3 pb-4">
+                    <a id="addfood2" onclick="AddFood()" class="btn" style="margin-top: 1rem; display: inline-block; 
+                      padding: 0.8rem 3rem;
+                      background: #bac34e;
+                      color: #fff;
+                      font-size: 1.7rem;
+                      cursor: pointer; ">添加</a>
+                    <button id="updatefood2" onclick="SaveUpdateFood()" class="btn btn-warning text-white float-left"
+                      style="display: none;">保存更新</button>
+                    <a onclick="CloseFood()" class="btn">取消</a>
+                  </div>
+
                 </div>
-
               </div>
+
+              <div class="cart_box pl-5 pt-4 shadow-sm mt-3 pb-4" style="width: 100%;margin: auto;">
+                <div id="scroll_height2" data-spy="scroll" data-target="#myScrollspy" data-offset="10"
+                  style="height:450px;overflow-y: scroll;padding-top: 5px;padding-right: 10px;">
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+
+                        <th scope="col" style="width: 40%;font-size: 115%;">名称</th>
+
+                        <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">价格</th>
+                        <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">操作</th>
+                      </tr>
+                    </thead>
+
+                    <tbody id="prinfManagementFood">
+                      <tr>
+                        <td>
+                          <div>
+                            <div class="cart_img_box float-left bg-warning" style="width: 30%;height: 80px;">
+                              <img src="image/foody-upload-api-foody-mobile-suon-10-jpg-181121104208.jpg" width="100%"
+                                height="100%">
+                            </div>
+                            <div class="cart_info_box float-left pl-3" style="width: 70%;height: 80px;">
+                              <p class="mb-1 font-weight-bold" style="font-size: 115%;">Đùi cừu nướng</p>
+                              <p style="font-size: 85%">Đùi cừu nướng với hành và một số gia vị</p>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td class="text-center">
+                          <p class="mt-2" style="padding:5px;">90000</p>
+                        </td>
+                        <td class="text-center">'<div class="btn btn-danger text-white ml-2" onclick="DeleteFood(0)"
+                            style="width: 16%;border-radius: 10px;"><i class="fa fa-trash" aria-hidden="true"></i></div>
+                          <div class="btn btn-warning  text-white mr-2" onclick="UpdateFood(0)"
+                            style="width: 16%;border-radius: 10px;"><i class="fa fa-pencil-square-o"
+                              aria-hidden="true"></i></div>
+                        </td>
+                      </tr>
+
+                    </tbody>
+
+                  </table>
+                </div>
+              </div>
+
+
             </div>
 
-            <div class="cart_box pl-5 pt-4 shadow-sm mt-3 pb-4" style="width: 100%;margin: auto;">
-              <div id="scroll_height2" data-spy="scroll" data-target="#myScrollspy" data-offset="10"
-                style="height:450px;overflow-y: scroll;padding-top: 5px;padding-right: 10px;">
-                <table class="table table-borderless">
-                  <thead>
-                    <tr>
 
-                      <th scope="col" style="width: 40%;font-size: 115%;">名称</th>
 
-                      <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">价格</th>
-                      <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">操作</th>
-                    </tr>
-                  </thead>
 
-                  <tbody id="prinfManagementFood">
-                    <tr>
-                      <td>
-                        <div>
-                          <div class="cart_img_box float-left bg-warning" style="width: 30%;height: 80px;">
-                            <img src="image/foody-upload-api-foody-mobile-suon-10-jpg-181121104208.jpg" width="100%"
-                              height="100%">
-                          </div>
-                          <div class="cart_info_box float-left pl-3" style="width: 70%;height: 80px;">
-                            <p class="mb-1 font-weight-bold" style="font-size: 115%;">Đùi cừu nướng</p>
-                            <p style="font-size: 85%">Đùi cừu nướng với hành và một số gia vị</p>
-                          </div>
-                        </div>
-                      </td>
 
-                      <td class="text-center">
-                        <p class="mt-2" style="padding:5px;">90000</p>
-                      </td>
-                      <td class="text-center">'<div class="btn btn-danger text-white ml-2" onclick="DeleteFood(0)"
-                          style="width: 16%;border-radius: 10px;"><i class="fa fa-trash" aria-hidden="true"></i></div>
-                        <div class="btn btn-warning  text-white mr-2" onclick="UpdateFood(0)"
-                          style="width: 16%;border-radius: 10px;"><i class="fa fa-pencil-square-o"
-                            aria-hidden="true"></i></div>
-                      </td>
-                    </tr>
 
-                  </tbody>
-
-                </table>
-              </div>
-            </div>
 
 
           </div>
-
-
-
-
-
-
-
-
         </div>
       </div>
     </div>
-  </div>
 
 </body>
 
@@ -559,7 +695,7 @@
 
   }
 
-
+// localStorage 持久化存储
   var food = JSON.parse(localStorage.getItem('food'));
   document.getElementById("dem_food").innerHTML = food.length;
 
@@ -740,10 +876,10 @@
 
       var prinf_payment_cart = `<tr style="border-bottom:1px solid #ccc;">
       <td>
-      <p>Tên người nhận: `+ paymentFood[i].name_customer + `</p>
-      <p>Địa chỉ: `+ paymentFood[i].address_customer + `</p>
-      <p>Số điện thoại: `+ paymentFood[i].phone_customer + `</p>
-       <p>Ngân Hàng: `+ paymentFood[i].bank + `</p>
+      <p>收件人姓名: `+ paymentFood[i].name_customer + `</p>
+      <p>地址: `+ paymentFood[i].address_customer + `</p>
+      <p>电话号码: `+ paymentFood[i].phone_customer + `</p>
+      <p>银行: `+ paymentFood[i].bank + `</p>
       </td>
       
       <td>`+ paymentFood[i].showDetailOrder + `<p id="commentPrinfPayment` + paymentFood[i].id_payment + `"></p></td>
@@ -781,7 +917,7 @@
   function verify_payment(id) {
     for (let i = 0; i < paymentFood.length; i++) {
       if (id == paymentFood[i].id_payment) {
-        paymentFood[i].status = "Đang giao hàng";
+        paymentFood[i].status = "正在支付";
         localStorage.setItem("paymentFood", JSON.stringify(paymentFood));
         document.getElementById("status_prinf" + id).innerHTML = paymentFood[i].status;
       }
@@ -911,7 +1047,7 @@
     if (username != '' && password != '' && repassword != '' && password == repassword) {
       for (let i = 0; i < account.length; i++) {
         if (account[i].username == username) {
-          alert("ten tai khoan đã tồn tại");
+          alert("用户名已存在");
 
           checkUsername = 1;
           break;
@@ -925,11 +1061,11 @@
         idup++;
         localStorage.setItem("idup", JSON.stringify(idup));
         console.log(account);
-        alert("dang ky thanh cong");
+        // alert("dang ky thanh cong");
         ManagementUser();
       }
     } else {
-      alert("chua thanh cong")
+      // alert("chua thanh cong")
     }
   }
 
@@ -954,7 +1090,6 @@
       var prinfManage = `<div class="col-4" style="height: 100px;padding:10px; padding-right:50px;">
       <div class="user_info_admin float-left" style="width: 60%">
         <p class="font-weight-bold" style="font-size: 120%">`+ account[i].username + `</p>
-        <p>Đơn hàng - 3</p>
       </div>
       <div class="user_function_admin float-right" style="width: 40%;display: flex;">
       <div class="btn btn-warning mr-1 text-white" onclick="editUserAdmin(`+ account[i].id + `)" style="width: 40%;border-radius: 10px;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>

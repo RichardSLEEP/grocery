@@ -84,7 +84,7 @@
             <!-- <h3 class="total"> total : 16.96</h3> -->
             <a href="#" class="btn">结账</a>
         </div>
-        <!-- 
+<!--         
         <form action="" class="login-form">
             <h3>login form</h3>
             <input type="email" placeholder="请输入邮箱" class="box">
@@ -119,10 +119,10 @@
                     <h3>价格 :</h3>
                     <p>￥6.99/kg </p>
                 </div>
-                <div class="size">
+                <!-- <div class="size">
                     <h3>尺寸 :</h3>
                     <p>大果（单果重120-140克） </p>
-                </div>
+                </div> -->
                 <div class="location">
                     <h3>产地 :</h3>
                     <p>浙江台州 </p>
@@ -135,10 +135,29 @@
                     <h3>最小零售单元 :</h3>
                     <p>500g/箱 </p>
                 </div>
-                <input type="submit" name="submit" value="添加至购物车" class="btn">
+                <!-- <input type="submit" name="submit" value="添加至购物车" class="btn"> -->
+                <input type="submit" name="edit" value="修改" class="btn">
             </div>
         </div>
     </section>
+
+    <div id="dialog" class="modal hide">
+        <form action="" method="get">
+            <p>宣传图片：<input type="file" id="file" /></p>
+            <p>产品名称：<input type="text" id="name" placeholder="在此输入名称" /></p>
+            <p>介绍：<input type="text" id="description" placeholder="请输入产品介绍"/></p>
+            <p>价格：<input type="number" id="price" placeholder="请输入您的定价"></p>
+            <p>产地：<input type="text" id="location" /></p>
+            <p>上市时间：<input type="data" id="time" /></p>
+            <p>最小零售单元：<input type="number" id="unit" /></p>
+            <input type="submit" value="提交" onclick="return SubmitForm()">
+            <!--当onclick返回false，submit不进行提交。-->
+            <input type="button" value="取消" onclick="Cancel()">
+        </form>
+    </div>
+
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+
 
     <!-- footer sectiton starts -->
     <section class="footer">
