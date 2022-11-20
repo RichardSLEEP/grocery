@@ -84,7 +84,7 @@
             <!-- <h3 class="total"> total : 16.96</h3> -->
             <a href="#" class="btn">结账</a>
         </div>
-<!--         
+        <!--         
         <form action="" class="login-form">
             <h3>login form</h3>
             <input type="email" placeholder="请输入邮箱" class="box">
@@ -104,7 +104,7 @@
     </div>
 
     <!-- 可以采用浮动 实现文字环绕 -->
-    <section class="products-details">
+    <section class="products-details" id="products-details">
         <div class="box">
             <div class="image">
                 <img id="orange" src="image/home-1.png " alt=" " class="img-responsive">
@@ -143,21 +143,57 @@
 
     <div id="dialog" class="modal hide">
         <form action="" method="get">
-            <p>宣传图片：<input type="file" id="file" /></p>
+            <!-- <p>宣传图片：<input type="file" id="file" /></p> -->
             <p>产品名称：<input type="text" id="name" placeholder="在此输入名称" /></p>
-            <p>介绍：<input type="text" id="description" placeholder="请输入产品介绍"/></p>
+            <p>介绍：<input type="text" id="description" placeholder="请输入产品介绍" /></p>
             <p>价格：<input type="number" id="price" placeholder="请输入您的定价"></p>
             <p>产地：<input type="text" id="location" /></p>
             <p>上市时间：<input type="data" id="time" /></p>
             <p>最小零售单元：<input type="number" id="unit" /></p>
-            <input type="submit" value="提交" onclick="return SubmitForm()">
+            <button id="add">增加</button>
+            <!-- <input type="submit" value="提交" onclick="return SubmitForm()"> -->
             <!--当onclick返回false，submit不进行提交。-->
             <input type="button" value="取消" onclick="Cancel()">
         </form>
     </div>
-
-    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
-
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#add").click(function () {
+                var str =
+                    "<div class='box'>"
+                    + "<div class='image'>"
+                    + "<img id='orange' src='image/home-1.png' alt='' class='img-responsive'>"
+                    + "</div>"
+                    + "<div class='content'>"
+                    + "<h2>" + $("#name").val() + "</h2>"
+                    + "<div class='description'>"
+                    + "<h3>介绍 :</h3>"
+                    + "<p>" + $("#description").val() + "</p>"
+                    + "</div>"
+                    + "<div class='price'>"
+                    + "<h3>价格 :</h3>"
+                    + "<p>￥" + $("#price").val() + "/kg </p>"
+                    + "</div>"
+                    + "<div class='location'>"
+                    + "<h3>产地 :</h3>"
+                    + "<p>" + $("#location").val() + "</p>"
+                    + "</div>"
+                    + "<div class='time'>"
+                    + "<h3>上市时间 :</h3>"
+                    + "<p>" + $("#time").val() + "</p>"
+                    + "</div>"
+                    + "<div class='minimum'>"
+                    + "<h3>最小零售单元 :</h3>"
+                    + "<p>" + $("#unit").val() + "</p>"
+                    + "</div>"
+                    + "</div>"
+                    + "</div>"
+                        console.log($("#unit").val());
+                $("#products-details").append(str)
+            })
+        })
+    </script>
 
     <!-- footer sectiton starts -->
     <section class="footer">
