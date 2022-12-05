@@ -652,7 +652,7 @@ section {
     }
   }
 
-  .login-form{
+  .login-form {
     position: absolute;
     top: 115%;
     right: -105%;
@@ -662,20 +662,20 @@ section {
     width: 35rem;
     padding: 2rem; //内边距
 
-    &.active{
+    &.active {
       right: 2rem;
-      transition: .4s linear;
+      transition: 0.4s linear;
     }
 
-    h3{
+    h3 {
       color: $black;
       font-size: 2.2rem;
       text-align: center;
-      margin-bottom: .7rem;
+      margin-bottom: 0.7rem;
     }
 
-    .box{
-      margin: .7rem;
+    .box {
+      margin: 0.7rem;
       border: $border;
       padding: 1rem 1.2rem;
       font-size: 1.5rem;
@@ -684,34 +684,34 @@ section {
       width: 100%;
     }
 
-    .remember{
+    .remember {
       display: flex;
       align-items: center;
-      gap: .5rem; //内部间隙 即勾选框 与 label记住我的空隙
-      margin: .7rem ;
+      gap: 0.5rem; //内部间隙 即勾选框 与 label记住我的空隙
+      margin: 0.7rem;
 
-      label{
+      label {
         font-size: 1.5rem;
         color: $light-color;
         cursor: pointer;
       }
     }
 
-    .btn{
+    .btn {
       margin: 1rem 0;
       width: 100%;
       text-align: center;
     }
 
-    p{
+    p {
       color: $light-color;
-      padding-top: .7rem;
+      padding-top: 0.7rem;
       font-size: 1.4rem;
 
-      a{
+      a {
         color: $green;
 
-        &:hover{
+        &:hover {
           text-decoration: underline;
         }
       }
@@ -968,7 +968,6 @@ section {
     margin-bottom: 1.5rem; // 外边距 底边距
     position: relative;
 
-
     .content {
       position: relative;
       display: inline-block;
@@ -1148,6 +1147,45 @@ section {
   }
 }
 
+#table {
+  border: $border;
+
+  thead {
+    padding: 1rem;
+    /* 项目在其包含块中在交叉轴方向上的对齐方式  此处为包含块的中间 */
+    /* 均匀排列每个元素  首个元素放置于起点，末尾元素放置于终点  */
+    // background-color: $light-bg;
+
+    td {
+      margin: 3.5rem;
+      padding: 3.5rem;
+      font-size: 2rem;
+      color: $black;
+    }
+  }
+  td {
+    margin: 3.5rem;
+    padding-left: 3.5rem;
+    // font-size: 1.3rem;
+    color: $light-color;
+    position: center;
+
+    .btn {
+      margin-top: 1rem;
+      display: inline-block; // 保留上下外边距，内部形成一个方块，嵌入的方块，和周围的元素不换行，block则换行
+      padding: 0.8rem 2rem;
+      background: $green;
+      color: $white;
+      font-size: 1.2rem;
+      cursor: pointer;
+
+      &:hover {
+        background: $black;
+      }
+    }
+  }
+}
+
 // .span {
 //   font-size: 2.5rem;
 // }
@@ -1210,9 +1248,6 @@ h2 {
   color: white;
   font-size: 2rem;
 }
-
-
-
 
 @media (max-width: 991px) {
   html {
@@ -1295,7 +1330,6 @@ h2 {
   // flex-wrap: wrap;
   justify-content: space-between;
 }
-
 
 @media (max-width: 450px) {
   html {

@@ -103,3 +103,122 @@ function checkCookie() {
     }
   }
 }
+
+var laptopData = [
+  {
+    name: "山东贝贝南瓜",
+    description: "口感粉糯，质地软实。",
+    price: 18.8,
+    unit: "500g",
+    id: 1,
+  },
+
+  {
+    name: "临海涌泉蜜桔",
+    description:
+      "单果重120-140克，无核，果形整齐，色泽亮丽，果皮细薄，肉质脆嫩，汁多化渣，风味浓郁，品质极佳。",
+    price: 6.99,
+    unit: "500g",
+    id: 2,
+  },
+];
+
+var thisId = 0;
+
+function displayTableData() {
+  var html = "<table border='1|1'class='table'>";
+  setTimeout(() => {
+    html += "<thead>";
+    html += "<tr>";
+    html += "<td>" + "农产品编号" + "</td>";
+    html += "<td>" + "农产品名称" + "</td>";
+    html += "<td>" + "介绍" + "</td>";
+    html += "<td>" + "价格" + "</td>";
+    html += "<td>" + "最小零售单元" + "</td>";
+    html += "<td>" + "操作" + "</td>";
+    html += "</tr>";
+    html += "</thead>";
+    for (var i = 0; i < laptopData.length; i++) {
+      var sno = i + 1;
+      html += "<tr>";
+      html += "<td>" + sno + "</td>";
+      html += "<td>" + laptopData[i].name + "</td>";
+      html += "<td>" + laptopData[i].description + "</td>";
+      html += "<td>" + laptopData[i].price + "</td>";
+      html += "<td>" + laptopData[i].unit + "</td>";
+      html +=
+        "<td>" +
+        `<button type="button" class="btn" onclick='removeItem(${laptopData[i].id})'>delete</button>` +
+        "</td>";
+      html +=
+        "<td>" +
+        `<button type="button" class="btn" onclick='getRow(${laptopData[i].id});getId(${laptopData[i].id})' >edi</button>` +
+        "</td>";
+      html += "</tr>";
+    }
+    html += "</table>";
+    document.getElementById("table").innerHTML = html;
+  }, 200);
+}
+displayTableData();
+
+function addOnclick() {
+  var name = document.getElementById("name").value;
+  var description = document.getElementById("description").value;
+  var price = document.getElementById("price").value;
+  var unit = document.getElementById("unit").value;
+
+  if (name && description && price && unit) {
+    let id = laptopData.length + 1;
+    laptopData.push({
+      name: name,
+      description: description,
+      price: price,
+      unit: unit,
+      id: id,
+    });
+    displayTableData();
+    clearItems();
+  }
+}
+
+function clearItems() {
+  document.getElementById("name").value = "";
+  document.getElementById("description").value = "";
+  document.getElementById("price").value = "";
+  document.getElementById("unit").value = "";
+}
+
+function removeItem(rec) {
+  console.log(rec);
+
+  var filt = laptopData.filter((a, i) => {
+    if (rec == a.id) {
+      laptopData.splice(i, 1);
+      displayTableData();
+    }
+    console.log(laptopData);
+  });
+}
+
+function getRow(rec) {
+  // 获取该行的值
+  thisId = rec;
+  console.log(laptopData[rec - 1].name);
+
+  document.getElementById("name").value = laptopData[rec - 1].name;
+  document.getElementById("description").value =
+    laptopData[rec - 1].description;
+  document.getElementById("price").value = laptopData[rec - 1].price;
+  document.getElementById("unit").value = laptopData[rec - 1].unit;
+}
+
+function editRow() {
+  laptopData[thisId - 1].name = document.getElementById("name").value;
+  console.log(laptopData[thisId - 1].name);
+
+  laptopData[thisId - 1].description = document.getElementById("description").value;
+  laptopData[thisId - 1].price = document.getElementById("price").value;
+  laptopData[thisId - 1].unit = document.getElementById("unit").value;
+  displayTableData();
+}
