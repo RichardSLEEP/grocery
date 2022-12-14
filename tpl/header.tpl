@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
-
-    <!-- font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
-    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-
-
-</head>
-
-<body>
-
     <!-- 页眉 -->
     <header class="header">
         <a href="home.html" class="logo"> 网上农博会 </a>
@@ -29,13 +9,14 @@
             <a href="">blog</a> -->
             <!-- <a href="shopcart.html">shopCart</a> -->
             <a href="JoinUs.html">Join Us</a>
+
         </nav>
 
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
             <div id="search-btn" class="fas fa-search"></div>
             <div id="cart-btn" class="fas fa-shopping-cart"></div>
-            <!-- <div id="login-btn" class="fas fa-user"></div> -->
+            <div id="login-btn" class="fas fa-user"></div>
         </div>
 
         <form action="" class="search-form">
@@ -86,77 +67,18 @@
             <!-- <h3 class="total"> total : 16.96</h3> -->
             <a href="#" class="btn">结账</a>
         </div>
-        <!--         
-        <form action="" class="login-form">
-            <h3>login form</h3>
-            <input type="email" placeholder="请输入邮箱" class="box">
-            <input type="password" placeholder="请输入密码" class="box">
+
+        <form action="home.html" class="login-form" method="POST">
+            <h3>登录</h3>
+            <input type="text" placeholder="请输入账号" class="box" id="username" name="username">
+            <input type="password" placeholder="请输入密码" class="box" id="password" name="password">
             <div class="remember">
                 <input type="checkbox" name="" id="remember-me">
                 <label for="remember-me">记住我</label>
             </div>
             <input type="submit" value="登录" class="btn">
-        </form> -->
+            <p>忘记密码？<a href="#">点击此处</a></p>
+            <p>没有账号？<a href="#">注册一个</a></p>
+        </form>
     </header>
     <!-- 页眉结束 -->
-
-    <div class="heading">
-        <h1>shop</h1>
-        <p> <a href="home.html">home >></a> <a href="shop.html">shop >></a> details </p>
-    </div>
-
-    <!-- 可以采用浮动 实现文字环绕 -->
-    <section class="products-details" id="products-details">
-        <div class="box">
-            <div class="image">
-                <img id="orange" src="image/home-1.png " alt=" " class="img-responsive">
-            </div>
-            <div class="content">
-                <h2>涌泉蜜桔</h2>
-                <div class="description">
-                    <h3>介绍 :</h3>
-                    <p>单果重120-140克，无核，果形整齐，色泽亮丽，果皮细薄，肉质脆嫩，汁多化渣，风味浓郁，品质极佳。 </p>
-                </div>
-                <div class="price">
-                    <h3>价格 :</h3>
-                    <p>￥6.99/kg </p>
-                </div>
-                <!-- <div class="size">
-                    <h3>尺寸 :</h3>
-                    <p>大果（单果重120-140克） </p>
-                </div> -->
-                <div class="location">
-                    <h3>产地 :</h3>
-                    <p>浙江台州 </p>
-                </div>
-                <div class="time">
-                    <h3>上市时间 :</h3>
-                    <p>2022-09-19 </p>
-                </div>
-                <div class="minimum">
-                    <h3>最小零售单元 :</h3>
-                    <p>500g/箱 </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- footer sectiton starts -->
-    <div id="foot"></div>
-    <script>
-        $.get("tpl/foot.tpl", function (result) {
-            $("#foot").html(result);
-        });
-    </script>
-
-    <!-- footer section ends -->
-
-
-    <link rel="stylesheet" href="">
-    <script src="js/script.js"></script>
-
-</body>
-
-</html>

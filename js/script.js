@@ -1,3 +1,5 @@
+
+
 let searchForm = document.querySelector(".search-form");
 // 指定Dom 命名赋值
 document.querySelector("#search-btn").onclick = () => {
@@ -217,8 +219,21 @@ function editRow() {
   laptopData[thisId - 1].name = document.getElementById("name").value;
   console.log(laptopData[thisId - 1].name);
 
-  laptopData[thisId - 1].description = document.getElementById("description").value;
+  laptopData[thisId - 1].description =
+    document.getElementById("description").value;
   laptopData[thisId - 1].price = document.getElementById("price").value;
   laptopData[thisId - 1].unit = document.getElementById("unit").value;
   displayTableData();
 }
+
+var a = document.getElementById("blah");
+function readUrl(input) {
+  if (input.files) {
+    var reader = new FileReader();
+    reader.readAsDataURL(input.files[0]);
+    reader.onload = (e) => {
+      a.src = e.target.result;
+    };
+  }
+}
+removeImg = () => {};
