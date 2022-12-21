@@ -1,3 +1,5 @@
+
+
 let searchForm = document.querySelector(".search-form");
 // 指定Dom 命名赋值
 document.querySelector("#search-btn").onclick = () => {
@@ -111,7 +113,6 @@ var laptopData = [
     price: 18.8,
     unit: "500g",
     id: 1,
-    classify: "新鲜蔬菜",
   },
 
   {
@@ -121,7 +122,6 @@ var laptopData = [
     price: 6.99,
     unit: "500g",
     id: 2,
-    classify: "应季水果",
   },
 ];
 
@@ -135,7 +135,6 @@ function displayTableData() {
     html += "<td>" + "农产品编号" + "</td>";
     html += "<td>" + "农产品名称" + "</td>";
     html += "<td>" + "介绍" + "</td>";
-    html += "<td>" + "产品分类" + "</td>";
     html += "<td>" + "价格" + "</td>";
     html += "<td>" + "最小零售单元" + "</td>";
     html += "<td>" + "操作" + "</td>";
@@ -147,7 +146,6 @@ function displayTableData() {
       html += "<td>" + sno + "</td>";
       html += "<td>" + laptopData[i].name + "</td>";
       html += "<td>" + laptopData[i].description + "</td>";
-      html += "<td>" + laptopData[i].classify + "</td>";
       html += "<td>" + laptopData[i].price + "</td>";
       html += "<td>" + laptopData[i].unit + "</td>";
       html +=
@@ -156,7 +154,7 @@ function displayTableData() {
         "</td>";
       html +=
         "<td>" +
-        `<button type="button" class="btn" onclick='getRow(${laptopData[i].id});getId(${laptopData[i].id})' >edit</button>` +
+        `<button type="button" class="btn" onclick='getRow(${laptopData[i].id});getId(${laptopData[i].id})' >edi</button>` +
         "</td>";
       html += "</tr>";
     }
@@ -171,9 +169,8 @@ function addOnclick() {
   var description = document.getElementById("description").value;
   var price = document.getElementById("price").value;
   var unit = document.getElementById("unit").value;
-  var classify = document.getElementById("classifyAnswer").value;
 
-  if (name && description && price && unit && classify) {
+  if (name && description && price && unit) {
     let id = laptopData.length + 1;
     laptopData.push({
       name: name,
@@ -181,12 +178,9 @@ function addOnclick() {
       price: price,
       unit: unit,
       id: id,
-      classify: classify,
     });
     displayTableData();
     clearItems();
-  } else {
-    alert("请确保输入所有信息！");
   }
 }
 
@@ -219,25 +213,6 @@ function getRow(rec) {
     laptopData[rec - 1].description;
   document.getElementById("price").value = laptopData[rec - 1].price;
   document.getElementById("unit").value = laptopData[rec - 1].unit;
-  document.getElementById("classifyAnswer").value = laptopData[rec - 1].classify;
-
-  if (document.getElementById("classifyAnswer").value == "应季水果")
-    {
-      document.getElementById("fruit").checked = true;
-      check(document.getElementById("fruit").value);
-    }
-
-  if (document.getElementById("classifyAnswer").value == "新鲜蔬菜")
-  {
-    document.getElementById("vegetable").checked = true;
-    check(document.getElementById("vegetable").value);
-  }
-
-  if (document.getElementById("classifyAnswer").value == "有机产品")
-  {
-    document.getElementById("organic").checked = true;
-    check(document.getElementById("organic").value);
-  }
 }
 
 function editRow() {
@@ -248,13 +223,7 @@ function editRow() {
     document.getElementById("description").value;
   laptopData[thisId - 1].price = document.getElementById("price").value;
   laptopData[thisId - 1].unit = document.getElementById("unit").value;
-  laptopData[thisId - 1].classify = document.getElementById("classifyAnswer").value;
   displayTableData();
-}
-
-function check(radio) {
-  document.getElementById("classifyAnswer").value = radio;
-  console.log(document.getElementById("classifyAnswer").value);
 }
 
 var a = document.getElementById("blah");

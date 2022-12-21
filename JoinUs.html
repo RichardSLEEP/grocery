@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 
-
 </head>
 
 <body>
@@ -36,7 +35,7 @@
             <div id="menu-btn" class="fas fa-bars"></div>
             <div id="search-btn" class="fas fa-search"></div>
             <div id="cart-btn" class="fas fa-shopping-cart"></div>
-            <!-- <div id="login-btn" class="fas fa-user"></div> -->
+            <div id="login-btn" class="fas fa-user"></div>
         </div>
 
         <form action="" class="search-form">
@@ -113,20 +112,31 @@
             <div class="content">
                 <div class="field">
                     <label for="laptopName">产品名称</label>
-                    <input type="text" class="form-control" id="name" placeholder="在此处输入名称">
+                    <input type="text" class="form-control" id="name" placeholder="在此处输入名称" value="临海西兰花">
                 </div>
                 <div class="field">
                     <label for="">产品介绍</label>
                     <!-- <input type="text" class="form-control" id="model" placeholder="请输入产品编号"> -->
-                    <textarea name="" id="description" cols="30" rows="10" placeholder="在此处输入产品介绍"></textarea>
+                    <textarea name="" id="description" cols="30" rows="10"
+                        placeholder="在此处输入产品介绍">临海西兰花，浙江省台州市临海市特产，全国农产品地理标志。</textarea>
+                </div>
+                <div class="field">
+                    <label for="">产品分类</label>
+                    <br>
+                        <input type="radio" name="classify" id="fruit" value="应季水果" onclick="check(this.value)"/>应季水果
+                        <br>
+                        <input type="radio" name="classify" id="vegetable" value="新鲜蔬菜" onclick="check(this.value)"/>新鲜蔬菜
+                        <br>
+                        <input type="radio" name="classify" id="organic" value="有机产品" onclick="check(this.value)" />有机产品
+                        <input type="text" id="classifyAnswer" name="CheckResult" hidden />
                 </div>
                 <div class="field">
                     <label for="price">价格（元/千克）</label>
-                    <input type="number" class="form-control" id="price" placeholder="请输入您的定价">
+                    <input type="number" class="form-control" id="price" placeholder="请输入您的定价" value="9">
                 </div>
                 <div class="field">
                     <label for="ram">最小零售单元</label>
-                    <input type="text" class="form-control" id="unit" placeholder="请规定最小零售单元">
+                    <input type="text" class="form-control" id="unit" placeholder="请规定最小零售单元" value="500g">
                 </div>
                 <!-- col-md-12 text-center -->
                 <div class="op">
@@ -150,7 +160,6 @@
             $("#foot").html(result);
         });
     </script>
-
     <!-- footer section ends -->
 
 
@@ -179,5 +188,5 @@
             window.alert("请输入值！")
         }
     -->
-
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script src="./js/script.js"></script>
